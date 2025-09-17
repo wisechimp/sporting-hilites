@@ -5,7 +5,7 @@ import dayjs from "dayjs";
 import advancedFormat from "dayjs/plugin/advancedFormat";
 
 import { sanityFetch } from "@/sanity/lib/live";
-import { getArticle } from "@/sanity/sanity-utils";
+import { getArticle } from "@/sanity/lib/queries";
 
 type PostPageProps = {
   params: Promise<{
@@ -31,7 +31,7 @@ const PostPage = async ({ params }: PostPageProps) => {
     <div>
       <h1>{title}</h1>
       <div>
-        <p>Author: {author?.name || "Ma Sharp"}</p>
+        <p>Author: {author?.name || "Hi-Li"}</p>
         <p>Posted on: {dayjs(publishedAt).format("Do MMMM YYYY")}</p>
       </div>
       <div>
