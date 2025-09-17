@@ -10,7 +10,7 @@ const NewsItem = ({ article }: NewsItemProps) => {
   return (
     <div>
       <h3>{article.title}</h3>
-      <Link>Read More</Link>
+      <Link href={`news/${article.slug}`}>Read More</Link>
     </div>
   );
 };
