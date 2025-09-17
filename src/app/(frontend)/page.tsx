@@ -1,6 +1,6 @@
 import { getLatestNews } from "@/sanity/sanity-utils";
 
-import NewsList from "./components/News-List/news-list";
+import NewsList from "../components/News-List/news-list";
 import styles from "./page.module.css";
 
 const Home = async () => {
