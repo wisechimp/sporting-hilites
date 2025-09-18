@@ -7,10 +7,12 @@ type NewsItemProps = {
 };
 
 const NewsItem = ({ article }: NewsItemProps) => {
+  console.log(JSON.stringify(article));
+  const { title, slug } = article;
   return (
     <div>
-      <h3>{article.title}</h3>
-      <Link href={`news/${article.slug}`}>Read More</Link>
+      <h3>{title}</h3>
+      <Link href={`news/${slug}`}>Read More</Link>
     </div>
   );
 };

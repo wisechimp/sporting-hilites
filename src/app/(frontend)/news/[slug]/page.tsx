@@ -31,7 +31,7 @@ const PostPage = async ({ params }: PostPageProps) => {
     <div>
       <h1>{title}</h1>
       <div>
-        <p>Author: {author?.name || "Hi-Li"}</p>
+        <p>Author: {author?.name || "Hi-Lite"}</p>
         <p>Posted on: {dayjs(publishedAt).format("Do MMMM YYYY")}</p>
       </div>
       <div>

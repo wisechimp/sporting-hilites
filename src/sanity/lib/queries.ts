@@ -18,7 +18,7 @@ const getArticle = defineQuery(`
     }`);
 
 const getLatestNews = defineQuery(`
-  *[_type == "post"] | order(_createdAt desc)[0..4]{
+  *[_type == "post"] |order(_createdAt desc)[0..4]{
       _id,
       _createdAt,
       title,
