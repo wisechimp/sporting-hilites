@@ -14,7 +14,8 @@ const getArticle = defineQuery(`
       _createdAt,
       title,
       "slug": slug.current,
-      content
+      author->{name},
+      body[]
     }`);
 
 const getLatestNews = defineQuery(`

@@ -25,6 +25,7 @@ const PostPage = async ({ params }: PostPageProps) => {
     return redirect("/404");
   }
 
+  console.log(JSON.stringify(post));
   const { title, author, body, publishedAt } = post;
 
   return (
