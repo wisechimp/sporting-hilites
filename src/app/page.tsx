@@ -1,13 +1,10 @@
-import { sanityFetch } from "@/sanity/lib/live";
-import { getLatestNews } from "@/sanity/lib/queries";
+import Article from "@/types/article-type";
 
 import NewsList from "../components/News-List/news-list";
 import styles from "./page.module.css";
 
 const Home = async () => {
-  const { data: latestNews } = await sanityFetch({
-    query: getLatestNews,
-  });
+  const latestNews = new Array<Article>();
 
   return (
     <div className={styles.page}>
