@@ -1,7 +1,12 @@
 import { MDXComponents } from "mdx/types";
 
-const mdxComponents: MDXComponents = {};
+import Heading2 from "./components/MdxCustomisation/heading";
 
-export const useMDXComponents = () => {
-  return mdxComponents;
+const useMDXComponents = (components: MDXComponents) => {
+  return {
+    h2: Heading2,
+    ...components,
+  };
 };
+
+export { useMDXComponents };

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+
 import "./globals.css";
 
 const geistSans = Geist({
@@ -13,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "MOTD Free!",
+  title: "Sporting Hilites!",
   description:
     "All the premier league highlight from the latest gameweek, plus select bonus interest pieces!",
 };
