@@ -1,14 +1,14 @@
-import Article from "@/types/article-type";
+import Post from "@/types/post";
 
 import NewsItem from "./news-item";
 
 type NewsListProps = {
-  data: Array<Article>;
+  data: Array<Post>;
 };
 
 const NewsList = ({ data }: NewsListProps) => {
-  return data.map((article) => {
-    return <NewsItem key={article._id} article={article} />;
+  return data.map((post, i) => {
+    return <NewsItem key={i} post={post} />;
   });
 };
 

@@ -1,18 +1,18 @@
 import Link from "next/link";
 
-import Article from "@/types/article-type";
+import Post from "@/types/post";
 
 type NewsItemProps = {
-  article: Article;
+  post: Post;
 };
 
-const NewsItem = ({ article }: NewsItemProps) => {
-  console.log(JSON.stringify(article));
-  const { title, slug } = article;
+const NewsItem = ({ post }: NewsItemProps) => {
+  console.log("Post data" + JSON.stringify(post));
+  const { title, slug } = post;
   return (
     <div>
       <h3>{title}</h3>
-      <Link href={`news/${slug}`}>Read More</Link>
+      <Link href={`/${slug}`}>Read More</Link>
     </div>
   );
 };

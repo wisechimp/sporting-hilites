@@ -1,11 +1,10 @@
-import Article from "@/types/article-type";
+import Link from "next/link";
 
-import NewsList from "../components/News-List/news-list";
+import Footer from "@/components/Footer";
+
 import styles from "./page.module.css";
 
 const Home = async () => {
-  const latestNews = new Array<Article>();
-
   return (
     <div className={styles.page}>
       <main className={styles.main}>
@@ -15,16 +14,11 @@ const Home = async () => {
             All the hightlights from the latest Premier League gameweek, plus ad
             hoc bonus content...
           </p>
-          <h2>Latest News</h2>
-          <NewsList data={latestNews} />
+          <h2>Choose your Sport!</h2>
+          <Link href="/football">Football</Link>
         </div>
+        <Footer />
       </main>
-      <footer className={styles.footer}>
-        <div>
-          <p>Eh up sommat &apos;ere lad.</p>
-          <p>Probably have a custom component footer</p>
-        </div>
-      </footer>
     </div>
   );
 };

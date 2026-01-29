@@ -1,20 +1,13 @@
 import Link from "next/link";
 
-import NewsList from "@/components/News-List/news-list";
-import Article from "@/types/article-type";
-
-const NewsPage = async () => {
-  const allNews = new Array<Article>();
-
+const premierLeagueHome = () => {
   return (
     <div>
-      <h1>News!</h1>
-      <NewsList data={allNews} />
-      <Link href="/football/premier-league/2025-round-7">
-        Where is the story?
-      </Link>
+      <h1>The Premier League</h1>
+      <p>Some chit chat about the top division in England.</p>
+      <Link href="/football/premier-league/2025-26">Season 2025-26</Link>
     </div>
   );
 };
 
-export default NewsPage;
+export default premierLeagueHome;
