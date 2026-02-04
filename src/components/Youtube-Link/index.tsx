@@ -9,10 +9,13 @@ const youtubeLinkBuilder = (videoCode: string) => {
 };
 
 const YoutubeLink = ({ videoCode }: YoutubeLinkProps) => {
+  if (videoCode === "") {
+    return;
+  }
   const url = youtubeLinkBuilder(videoCode);
   return (
     <a href={url} target="_blank" rel="noopener noreferrer">
-      <FaYoutube color="red" />
+      <FaYoutube color="red" size={24} />
     </a>
   );
 };
