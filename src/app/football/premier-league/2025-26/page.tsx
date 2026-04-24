@@ -9,7 +9,7 @@ const pl202526LandingPage = async () => {
       <h1>Premier League Season 2025/26</h1>
       <p>
         This was the umpteenth running on the top tier of English football in
-        it's various guises.
+        it'&apos's various guises.
       </p>
       <p>
         At the top end of the table Arsenal were hoping to finally break their
