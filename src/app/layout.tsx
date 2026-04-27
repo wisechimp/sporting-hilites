@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 
-import { UmamiAnalytics } from "@/components/Analytics/umami-analytics";
+import { GoogleAdSense } from "@/components/ThirdPartyServices/google-adsense";
+import { UmamiAnalytics } from "@/components/ThirdPartyServices/umami-analytics";
 
 import "./globals.css";
 
@@ -32,6 +33,7 @@ export default function RootLayout({
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         {children}
         <UmamiAnalytics />
+        <GoogleAdSense />
       </body>
     </html>
   );
