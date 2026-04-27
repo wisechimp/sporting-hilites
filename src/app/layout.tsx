@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 
+import { UmamiAnalytics } from "@/components/Analytics/umami-analytics";
+
 import "./globals.css";
 
 const geistSans = Geist({
@@ -26,8 +28,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head></head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         {children}
+        <UmamiAnalytics />
       </body>
     </html>
   );
