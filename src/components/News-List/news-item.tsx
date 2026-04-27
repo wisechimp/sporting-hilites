@@ -7,7 +7,6 @@ type NewsItemProps = {
 };
 
 const NewsItem = ({ post }: NewsItemProps) => {
-  console.log("Post data" + JSON.stringify(post));
   const { title, slug } = post;
   return (
     <div>
