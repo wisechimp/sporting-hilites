@@ -2,22 +2,24 @@ import Link from "next/link";
 
 import Footer from "@/components/Footer";
 
-import styles from "./page.module.css";
-
 const Home = async () => {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
+    <div>
+      <main>
         <div>
           <h1>Sporting Hi Lites!</h1>
           <p>
-            All the hightlights from the latest Premier League gameweek, plus ad
-            hoc bonus content...
+            A growing collection of links to hightlights from the sporting
+            world, including the Premier League and Rugby League's Super League.
           </p>
           <h2>Choose your Sport!</h2>
           <div className="flexList">
-            <Link href="/football">Football</Link>
-            <Link href="/rugby-league">Rugby League</Link>
+            <Link className="flexListItem" href="/football">
+              Football
+            </Link>
+            <Link className="flexListItem" href="/rugby-league">
+              Rugby League
+            </Link>
           </div>
         </div>
         <Footer />

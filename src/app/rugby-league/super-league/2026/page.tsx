@@ -19,12 +19,19 @@ const sl2026LandingPage = async () => {
         of the previous season while the usual suspects had worked to upgrade
         their squads.
       </p>
-      <p>Something about the middling clubs.</p>
       <p>
-        Bottom clubs, who was looking in trouble after the last IMG rankings,
-        and can include link to them.
+        Will anyone be promoted or relagated this season? Your guess is as good
+        as mine. Super League status is dependent on a series of grading
+        criteria with the 9 grade A club currently guaranteed Super League
+        status pretty much regardless of their league position. Meanwhile the 5
+        Grade B sides would be looking over their shoulders and hoping none of
+        their nearest competitors in the Championship put together a dazzling
+        run of form on the pitch, or presumably a smart, viral, social media
+        campaign off it...
       </p>
-      <NewsList data={roundsList} />
+      <div className="flexList">
+        <NewsList data={roundsList} />
+      </div>
     </div>
   );
 };

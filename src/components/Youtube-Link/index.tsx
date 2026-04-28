@@ -14,7 +14,12 @@ const YoutubeLink = ({ videoCode }: YoutubeLinkProps) => {
   }
   const url = youtubeLinkBuilder(videoCode);
   return (
-    <a href={url} target="_blank" rel="noopener noreferrer">
+    <a
+      className="flexListItem"
+      href={url}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
       <FaYoutube color="red" size={24} />
     </a>
   );

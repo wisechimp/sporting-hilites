@@ -9,9 +9,11 @@ type NewsItemProps = {
 const NewsItem = ({ post }: NewsItemProps) => {
   const { title, slug } = post;
   return (
-    <div>
+    <div className="flexListItem">
       <h3>{title}</h3>
-      <Link href={`/${slug}`}>Read More</Link>
+      <Link className="flexListItem" href={`/${slug}`}>
+        Read More
+      </Link>
     </div>
   );
 };
