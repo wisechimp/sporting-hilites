@@ -15,7 +15,10 @@ const Home = async () => {
             hoc bonus content...
           </p>
           <h2>Choose your Sport!</h2>
-          <Link href="/football">Football</Link>
+          <div className="flexList">
+            <Link href="/football">Football</Link>
+            <Link href="/rugby-league">Rugby League</Link>
+          </div>
         </div>
         <Footer />
       </main>
