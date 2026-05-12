@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 
-import { GoogleAdSense } from "@/components/ThirdPartyServices/google-adsense";
 import { UmamiAnalytics } from "@/components/ThirdPartyServices/umami-analytics";
 
 import "./globals.css";
@@ -18,8 +17,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Sporting Hilites!",
-  description:
-    "All the premier league highlight from the latest gameweek, plus select bonus interest pieces!",
+  description: "Highlights from a selection of sports!",
 };
 
 export default function RootLayout({
@@ -33,7 +31,6 @@ export default function RootLayout({
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         {children}
         <UmamiAnalytics />
-        <GoogleAdSense />
       </body>
     </html>
   );
