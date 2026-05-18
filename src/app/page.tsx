@@ -1,7 +1,5 @@
 import Link from "next/link";
 
-import Footer from "@/components/Footer";
-
 const Home = async () => {
   return (
     <div>
@@ -22,7 +20,6 @@ const Home = async () => {
             </Link>
           </div>
         </div>
-        <Footer />
       </main>
     </div>
   );
