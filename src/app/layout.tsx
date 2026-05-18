@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 
+import Footer from "@/components/Footer";
+import Menu from "@/components/Menu";
 import { UmamiAnalytics } from "@/components/ThirdPartyServices/umami-analytics";
-
-import "./globals.css";
+import "@/styles/global.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,7 +30,9 @@ export default function RootLayout({
     <html lang="en">
       <head></head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
+        <Menu />
         {children}
+        <Footer />
         <UmamiAnalytics />
       </body>
     </html>
