@@ -8,8 +8,8 @@ const pl202526LandingPage = async () => {
     <div>
       <h1>Premier League Season 2025/26</h1>
       <p>
-        This was the 127th season of the top tier of English football in
-        it`&apos`s various guises.
+        This was the 127th season of the top tier of English football in its
+        various guises.
       </p>
       <p>
         At the top end of the table Arsenal were hoping to finally break their
