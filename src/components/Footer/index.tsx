@@ -15,7 +15,7 @@ const Footer = () => {
         <div>
           {sportMenuData.map((item) => {
             return (
-              <div className={styles.footerMenuItemContainer}>
+              <div key={item.id} className={styles.footerMenuItemContainer}>
                 <MenuItem data={item} />
               </div>
             );
